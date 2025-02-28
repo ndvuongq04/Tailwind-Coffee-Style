@@ -43,18 +43,44 @@ text-xs : font-size : 12px
 
 <!-- responsive header -->
 lg : >= 1024px
-lg:hidden <-> kích thước màn hình >= 1024px thì sẽ ẩn thẻ chứa class này đi >< sẽ hiển thị ** basis-3/6 hidden lg:flex
-                lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium -> mặc định là thẻ
-                này sẽ ẩn
-                -> lg:flex : nếu màn >= 1024px -> flex
-                -> lg:items-center : màn >= 1024 -> flex
-                -> .....
+lg:hidden
+<-> kích thước màn hình >= 1024px thì sẽ ẩn thẻ chứa class này đi >< sẽ hiển thị ** basis-3/6 hidden lg:flex
+        lg:items-center lg:justify-end lg:gap-8 uppercase text-sm text-gray-500 font-medium -> mặc định là thẻ
+        này sẽ ẩn
+        -> lg:flex : nếu màn >= 1024px -> flex
+        -> lg:items-center : màn >= 1024 -> flex
+        -> .....
 
-                <!-- slider -->
-                h-[530px] : thẻ có chiểu cao cụ thể là 530px
-                bg-[url('./img/image.png')] : lấy ảnh này làm background cho phẩn tử
-                bg-cover : kích thước ảnh phủ kín size của ptu cha
-                bg-bottom : căn ảnh nền về phía dưới
-                bg-gray-900/30 : thì nên sẽ là màu gray 900 , /30 nghĩa là nó sẽ bị mở đi 30 ( chỉ sử dụng 30% màu gray
-                trong 100% -> 900/40 -> nó sẽ đậm hơn)
-                tracking-wider : tăng khoảng cách giữa các chữ cái 0.05rem
+
+
+
+
+        <!-- slider -->
+        h-[530px] : thẻ có chiểu cao cụ thể là 530px
+        bg-[url('./img/image.png')] : lấy ảnh này làm background cho phẩn tử
+        bg-cover : kích thước ảnh phủ kín size của ptu cha
+        bg-bottom : căn ảnh nền về phía dưới
+        bg-gray-900/30 : thì nên sẽ là màu gray 900 , /30 nghĩa là nó sẽ bị mở đi 30 ( chỉ sử dụng 30% màu gray
+        trong 100% -> 900/40 -> nó sẽ đậm hơn)
+        tracking-wider : tăng khoảng cách giữa các chữ cái 0.05rem
+
+        <!--  -->
+
+
+
+
+
+
+        <!-- git -->
+        tạo 1 nhanh mới và chuển qua nhánh đó
+        -> git checkout -d <ten_nhanh>
+            đẩy và commit code lên nhánh mới :
+            -> git add . ; git commit -m "commit name"
+            đẩy nhánh mới lên remote
+            -> git push origin <ten_nhanh>
+                chuyển về nhánh chính : git checkout main
+                lấy code mới nhất về trước khi merge : git pull origin main
+                gộp code vào nhanh main
+                đẩy lên remote : git push origin main
+                git branch -d ten_nhanh_moi # Xóa nhánh cục bộ
+                git push origin --delete ten_nhanh_moi # Xóa nhánh trên remote

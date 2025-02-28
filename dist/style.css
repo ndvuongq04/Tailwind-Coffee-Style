@@ -582,9 +582,6 @@
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
-  .h-\[530\] {
-    height: 530;
-  }
   .h-\[530px\] {
     height: 530px;
   }
@@ -681,9 +678,6 @@
   }
   .bg-gray-900\/30 {
     background-color: color-mix(in oklab, var(--color-gray-900) 30%, transparent);
-  }
-  .bg-gray-900\/50 {
-    background-color: color-mix(in oklab, var(--color-gray-900) 50%, transparent);
   }
   .bg-white {
     background-color: var(--color-white);
@@ -841,38 +835,10 @@
       }
     }
   }
-  .hover\:opacity-30 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 30%;
-      }
-    }
-  }
-  .hover\:opacity-50 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 50%;
-      }
-    }
-  }
-  .hover\:opacity-70 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 70%;
-      }
-    }
-  }
   .hover\:opacity-80 {
     &:hover {
       @media (hover: hover) {
         opacity: 80%;
-      }
-    }
-  }
-  .hover\:opacity-880 {
-    &:hover {
-      @media (hover: hover) {
-        opacity: 880%;
       }
     }
   }
