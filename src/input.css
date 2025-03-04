@@ -4,6 +4,10 @@
 /* config tailwind */
 @theme {
     --color-light-coffee: #C89F94;
+    --color-light-coffee-50: #E8D6D0;
+    --color-light-coffee-400: #A25F4B;
+    --color-light-coffee-600: #744838;
+
     --font-Karla: 'Karla', 'serif';
     --animate-slideDown: slideDown .2s ease-in-out;
 
@@ -38,4 +42,16 @@
 
 .ct-top-menu-expanded {
     @apply absolute top-10 z-50 w-full text-center bg-white animate-slideDown;
+}
+
+.ct-subheadLine {
+    @apply flex justify-center items-center mb-24;
+}
+
+.ct-subheadLine-deco-line {
+    @apply w-8 h-px bg-gray-200;
+}
+
+.ct-subheadLine-label {
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
 }
