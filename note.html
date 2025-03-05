@@ -67,21 +67,33 @@ lg:hidden
         <!-- story  -->
         responsive text -> tăng giảm px thôi
 
+        <!-- product mugs -->
+        kỹ thuật căn giữa bằng position ( cần có sd postiion)
+        - căn giữa theo chiều ngang :
+        -> left-1/2 : mép trái cách lề 50%
+        -> -translate-x-1/2 : mép phải cách lề 50% ( dịch sang trái >< không âm -> dịch sang phải )
+
+            - căn giữa theo chiều dọc và chiều ngang :
+            -> top-1/2 : phần tử cách lề trên 50%
+            -> -translate-x-1/2 và left-1/2 : căn giữa theo chiều ngang
+            -> -translate-y-1/2 : căn giữa theo chiều dọc
+
+            responsive product mugs -> căn chỉnh grid , w thẻ cha ,...
 
 
 
 
 
-        <!-- git -->
-        tạo 1 nhanh mới và chuển qua nhánh đó
-        -> git checkout -b <ten_nhanh>
-            đẩy và commit code lên nhánh mới :
-            -> git add . ; git commit -m "commit name"
-            đẩy nhánh mới lên remote
-            -> git push origin <ten_nhanh>
-                chuyển về nhánh chính : git checkout main
-                lấy code mới nhất về trước khi merge : git pull origin main
-                gộp code vào nhanh main
-                đẩy lên remote : git push origin main
-                git branch -d ten_nhanh_moi # Xóa nhánh cục bộ
-                git push origin --delete ten_nhanh_moi # Xóa nhánh trên remote
+            <!-- git -->
+            tạo 1 nhanh mới và chuển qua nhánh đó
+            -> git checkout -b <ten_nhanh>
+                đẩy và commit code lên nhánh mới :
+                -> git add . ; git commit -m "commit name"
+                đẩy nhánh mới lên remote
+                -> git push origin <ten_nhanh>
+                    chuyển về nhánh chính : git checkout main
+                    lấy code mới nhất về trước khi merge : git pull origin main
+                    gộp code vào nhanh main
+                    đẩy lên remote : git push origin main
+                    git branch -d ten_nhanh_moi # Xóa nhánh cục bộ
+                    git push origin --delete ten_nhanh_moi # Xóa nhánh trên remote

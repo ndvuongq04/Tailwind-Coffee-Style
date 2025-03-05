@@ -11,6 +11,21 @@
     --font-Karla: 'Karla', 'serif';
     --animate-slideDown: slideDown .2s ease-in-out;
 
+    --animate-fadeIn: fadeIn .3s ease-in;
+
+    @keyframes fadeIn {
+        0% {
+            transform: translate3d(0px, 8px, 0px);
+            opacity: 0;
+        }
+
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+            opacity: 1;
+        }
+    }
+
     @keyframes slideDown {
         0% {
             transform: translateY(-100%);
@@ -53,5 +68,9 @@
 }
 
 .ct-subheadLine-label {
-    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-[12px] text-center;
+    @apply uppercase mx-4 tracking-widest text-gray-500 font-medium text-xs text-center;
+}
+
+.ct-button {
+    @apply text-center uppercase tracking-widest py-4 px-5 text-[13px] font-medium cursor-pointer hover:opacity-90
 }
